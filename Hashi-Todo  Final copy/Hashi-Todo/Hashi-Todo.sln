@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hashi-Todo", "Hashi-Todo.csproj", "{21A7B974-F1FB-4036-BC59-694D3B8B00C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21A7B974-F1FB-4036-BC59-694D3B8B00C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A7B974-F1FB-4036-BC59-694D3B8B00C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A7B974-F1FB-4036-BC59-694D3B8B00C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A7B974-F1FB-4036-BC59-694D3B8B00C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2443F04A-B3DE-43F6-85AE-D172A7BC27F6}
+	EndGlobalSection
+EndGlobal

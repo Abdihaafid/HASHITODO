@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Hashi_Todo</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Todo' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
+    <PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\TodoViewModel\" />
+    <None Remove="Views\User\" />
+    <None Remove="Views\UserProfile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\TodoViewModel\" />
+    <Folder Include="Views\User\" />
+    <Folder Include="wwwroot\Images\" />
+    <Folder Include="Views\UserProfile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Todo\Index.cshtml" />
+    <Content Remove="wwwroot\Images\Hashi.png" />
+    <Content Remove="wwwroot\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Images\Hashi.png" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,61 @@
+﻿@model TodoViewModel
+
+@{
+    var currentUserName = User.Identity.IsAuthenticated ? User.Identity.Name : "Please Log in or Register to get full access";
+}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello again</title>
+    <link rel="stylesheet" href="~/css/Index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="~/Images/Hashi.png" alt="Hashi Logo">
+            </div>
+            <div class="nav-buttons">
+                <a href="@Url.Action("Index", "UserProfile")" class="round-button">User Profile</a>
+                <span class="button-spacing"></span>
+                <a href="@Url.Action("Logout", "User")" class="round-button">Log Out</a>
+            </div>
+        </div>
+        <div class="prompt">
+            <p>@currentUserName</p>
+        </div>
+        <div class="suggestions">
+            <ul class="suggestions">
+                @foreach (var t in Model.TodoList)
+                {
+                    <li>
+                        @t.Name
+                        <button class="Delete" onclick="DoneTodo(@t.Id)">Done</button>
+                        <button onclick="formMaker(@t.Id)">Update</button>
+                    </li>
+                }
+            </ul>
+        </div>
+        <form asp-action="Insert" id="form-action" method="post" class="form-horizontal" role="form">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10">
+                    @*<label asp-for="Todo.Name" class="form-label"></label>*@
+                    <input asp-for="Todo.Id" type="hidden" class="form-control" />
+                    <div class="input">
+                        <input asp-for="Todo.Name" class="form-control" placeholder="Enter a Task here" />
+                        <button type="submit" id="form-button">Add Todo</button>
+                    </div>
+                    <span asp-validation-for="Todo.Name" class="text-danger"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

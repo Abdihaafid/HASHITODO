@@ -1,0 +1,160 @@
+﻿body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFBFC;
+}
+
+body, html {
+    width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9fb;
+    border-radius: 20px;
+    width: 85%;
+    left: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.round-button {
+    background-color: #0F5298;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.button-spacing {
+    margin-right: 15px; 
+}
+
+.prompt {
+    text-align: center;
+    font-size: 18px;
+    margin: 40px 0 10px;
+    font-family: Sans-serif;
+    background-color: #0F5298;
+    border-radius: 20px; 
+    padding: 5px; 
+    color: white; 
+    font-weight: bold; 
+}
+
+.suggestions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.suggestions li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 17px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    font-weight: bold; /* Add this line to make the text bold */
+    font-family: sans-serif; /* Add this line to use sans-serif font type */
+    min-width: 500px;
+}
+    .suggestions li button {
+        display: flex; /* Make the buttons flex items within the list item */
+        justify-content: flex-end;
+        cursor: pointer;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: black;
+        color: #ddd;
+        margin-right: 10px; /* Add spacing between buttons */
+    }
+
+        .suggestions li button.Done {
+            order: 1; /* Place the Done button first */
+        }
+
+        .suggestions li button.Update {
+            order: 2; /* Place the Update button second */
+        }
+
+        /* Remove unnecessary positioning rules for Done button */
+        .suggestions li button.Done {
+            position: static; /* Revert back to static positioning */
+            left: auto;
+            transform: translateX(0);
+            right: auto;
+        }
+.suggestions {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+}
+
+.input {
+    position: fixed;
+    bottom: 0;
+    left: 60;
+    width: 60%;
+    padding: 20px;
+    background-color: #FCFBFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.input input {
+        flex-grow: 1;
+        padding: 15px;
+        font-size: 18px;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        outline: none;
+    }
+.input button {
+        padding: 15px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: black;
+        color: #ddd;
+        margin-left: 10px;
+    }
+.todo-label {
+    color: #FCFBFC;
+}

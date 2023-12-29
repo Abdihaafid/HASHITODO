@@ -1,0 +1,41 @@
+﻿@model Todo.Models.ViewModels.UserProfileViewModel
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="~/css/UserProfile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="~/Images/Hashi.png" alt="Hashi Logo">
+            </div>
+            <div class="nav-buttons">
+                <a href="@Url.Action("Index", "Todo")" class="round-button"> TODO </a>
+                <span class="button-spacing"></span>
+                <a href="@Url.Action("Logout", "User")" class="round-button">Log Out</a>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <img src="~/Images/EGG.jpg" alt="Profile Image" class="profile-image">
+            <div class="profile-info">
+                <h2>User Profile</h2>
+                <p class="username"> @Model.User.Username </p>
+                <p class="todo-count"> @Model.TodoCount </p>
+            </div>
+        </div>
+
+
+        <!-- Add specific styles for UserProfile/Index view here -->
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
+

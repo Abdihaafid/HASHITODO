@@ -1,0 +1,75 @@
+﻿body {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); /* Mixed RGB background color */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #FCFBFC; /* Login content background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Increased width for the login content */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-image-container {
+    width: 200px; /* Fixed width for the image container */
+    height: 100%;
+    position: absolute;
+    left: -100px; /* Move the image container to the left */
+    top: 0;
+    background-image: url('path/to/your/image.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.control-label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.btn-primary {
+    background-color: #000; /* Black background for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Round-shaped button */
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: #333; /* Darker color on hover */
+    }
+
+.register-link {
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}

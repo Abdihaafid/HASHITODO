@@ -1,0 +1,47 @@
+﻿@model User
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="~/css/Login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="left-image-container">
+            <img src="~/Images/redt.webp" alt="Left-image">
+        </div>
+
+        <h2>Login</h2>
+
+        @using (Html.BeginForm("Login", "User", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Username, new { @class = "control-label" })
+        @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
+    </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, new { @class = "control-label" })
+                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+            </div>
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <button type="submit" class="btn btn-primary">Login</button>
+        }
+
+        <div>
+            @Html.ActionLink("Go to user Register", "Register", null, new { @class = "register-link" })
+        </div>
+    </div>
+</body>
+</html>

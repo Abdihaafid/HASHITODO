@@ -1,0 +1,102 @@
+﻿/* UserProfile.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFBFC;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    margin-top: 70px; /* Add margin-top to create space for the navbar */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9fb;
+    border-radius: 20px;
+    width: 85%;
+    left: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.round-button {
+    background-color: #0F5298;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button-spacing {
+    margin-right: 15px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 120px; /* Adjust the width as needed */
+    height: 120px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circular image */
+    margin-right: 20px; /* Add margin for spacing */
+    border: 5px solid blue; /* Blue border */
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.todo-count {
+    background-color: blue; /* Change to blue */
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    color: white; /* Set text color to white for better visibility */
+}
+.username {
+    background-color: blue; /* Change to blue */
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    color: white; /* Set text color to white for better visibility */
+}

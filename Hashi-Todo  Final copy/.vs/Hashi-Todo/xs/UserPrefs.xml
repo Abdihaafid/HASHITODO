@@ -1,0 +1,73 @@
+﻿<Properties StartupConfiguration="{73876A53-556F-4EC7-991F-5DA65C72661E}|Todo">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hashi-Todo/Startup.cs">
+    <Files>
+      <File FileName="Hashi-Todo/Models/todoItem.cs" />
+      <File FileName="Hashi-Todo/Startup.cs" Line="37" Column="57" />
+      <File FileName="Hashi-Todo/Controllers/TodoController.cs" Line="12" Column="6" />
+      <File FileName="Hashi-Todo/Controllers/UserController.cs" Line="93" Column="76" />
+      <File FileName="Hashi-Todo/Views/Shared/Index.cshtml" Line="26" Column="29" />
+      <File FileName="Hashi-Todo/wwwroot/js/site.js" />
+      <File FileName="Hashi-Todo/Models/User.cs" />
+      <File FileName="Hashi-Todo/Views/User/Login.cshtml" Line="38" Column="1" />
+      <File FileName="Hashi-Todo/Controllers/HomeController.cs" />
+      <File FileName="Hashi-Todo/Views/User/Register.cshtml" Line="18" Column="10" />
+      <File FileName="Hashi-Todo/Models/TodoViewModel/TodoViewModel.cs" />
+      <File FileName="Hashi-Todo/Views/_ViewImports.cshtml" />
+      <File FileName="Hashi-Todo/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="Hashi-Todo/Views/_ViewStart.cshtml" />
+      <File FileName="Hashi-Todo/wwwroot/css/Index.css" />
+      <File FileName="Hashi-Todo/wwwroot/css/Logout.css" />
+      <File FileName="Hashi-Todo/Program.cs" />
+      <File FileName="Hashi-Todo/wwwroot/css/Login.css" />
+      <File FileName="Hashi-Todo/Views/Shared/_Layout.cshtml" />
+      <File FileName="Hashi-Todo/appsettings.json" />
+      <File FileName="Hashi-Todo/appsettings.Development.json" />
+      <File FileName="Hashi-Todo/Properties/launchSettings.json" />
+      <File FileName="Hashi-Todo/mydatabase.db.sqbpro" />
+      <File FileName="Hashi-Todo/Controllers/UserProfileController.cs" Line="33" Column="22" />
+      <File FileName="Hashi-Todo/Models/TodoViewModel/UserProfileViewModel.cs" Line="1" Column="1" />
+      <File FileName="Hashi-Todo/Views/UserProfile/Index.cshtml" Line="22" Column="1" />
+      <File FileName="Hashi-Todo/wwwroot/css/UserProfile.css" />
+      <File FileName="Hashi-Todo/wwwroot/css/Register.css" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Hashi-Todo" expanded="True">
+            <Node name="Hashi-Todo" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="TodoViewModel" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="User" expanded="True" />
+                <Node name="UserProfile" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="Images" expanded="True" />
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="mydatabase.db" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Hashi-Todo PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
